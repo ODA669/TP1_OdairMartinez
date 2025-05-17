@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+}
+
+/**********************Typographie*********************/
+
+h1,
+h2,
+h3,
+p {
+  font-family: raleway;
+  color: #3e294e;
+}
+
+p {
+  line-height: 1.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/**********************Section Menu et logo*********************/
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-nav nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-nav nav ul li a {
+  text-decoration: none;
+  color: #3e294e;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: 184px;
+  height: 172px;
+}
+
+.logo h1 {
+  margin: 10px 0 5px;
+}
+
+.menu-nav ul {
+  margin-top: 45px;
+  font-family: anybody;
+  font-size: 1.75rem;
+  margin-right: 60px;
+}
+
+.menu-nav li {
+  display: inline;
+  padding: 10px;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #3e294e;
+  font-family: anybody;
+}
+
+.menu-nav a:hover {
+  text-decoration: underline;
+  color: #3e294e;
+}
+
+.menu-nav a.active {
+  text-decoration: underline;
+  color: #3e294e;
+}
+
+/**********************Section 1*********************************/
+
+/************************Section 2**********************/
+/************************Section 3**********************/
+/************************Section **********************/
+
+/************************Section footer******************************/
+
+.container-footer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: gray;
+  font-size: 1rem;
+  font-family: anybody;
+}
+/*************Media Querys************************/
+
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 961px) {
+}
+
+@media (max-width: 960px) {
+}
