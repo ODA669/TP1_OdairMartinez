@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&display=swap" rel="stylesheet">
 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,6 +50,10 @@
             <ul>
               <li><a href="#Section_3">menu1</a></li>
               <li><a href="#Section_4">menu2</a></li>
+                <li><a href="#Section_3">menu3</a></li>
+              <li><a href="#Section_4">menu4</a></li>
+                <li><a href="#Section_3">menu5</a></li>
+              <li><a href="#Section_4">menu6</a></li>
             </ul>
           </nav>
         </div>
@@ -52,70 +62,114 @@
       <main>
         <!-- Cette section parle de ce que je suis-->
         <section id="Section_1">
+            <div class="container_carousel">
+                 <div id="miCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
 
- <div id="miCarousel" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicadores -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+                <!-- Slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/microbrasseries.jpg" class="d-block w-100" alt="Imagen 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/numero 1.png" class="d-block w-100" alt="Imagen 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/sddefault.jpg" class="d-block w-100" alt="Imagen 3">
+                  </div>
+                </div>
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/microbrasseries.jpg" class="d-block w-100" alt="Imagen 1">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/numero 1.png" class="d-block w-100" alt="Imagen 2">
-    </div>
-    <div class="carousel-item">
-      <img src="/img/sddefault.jpg" class="d-block w-100" alt="Imagen 3">
-    </div>
-  </div>
-
-  <!-- Controles izquierda/derecha -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</div>
+                <!-- Controles izquierda/derecha -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+           
         </section>
+        <div class="ligne_container"> <h1 class="ligne_decorative"></h1></div>
+       
         <!-- Cette section parle de mes passe-temps-->
         <section id="Section_2">
-          input bouton
+          <div  class="container_form_mail">
+            <div class="">
+              <p>Envoyes nous ton courriel</p>
+              <form class="mail_form" action="" method="post">  
+                <div class="mail"><textarea name="" id="" placeholder="email" ></textarea></div>
+                <div class="bouton"><button>envoyer! </button></div>
+              </form>
+            </div>
+          </div>
         </section>
-        <!-- Cette section parle de ce que j'aime faire-->
+          <!-- Cette section parle de ce que j'aime faire-->
         <section id="Section_3">
 
-          gros text avec section
+         <div class="container_text_bouton">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+               Consequuntur, animi illum a deserunt, deleniti in suscipit<br>
+                dolore quidem, et tempore aut inventore voluptas ut tenetur<br>
+                 fugiat laborum perspiciatis labore quae.</p>
+            <button>button</button>
+         </div>
         </section>
-        <!-- Cette section parle des pages web que j'aime avec les liens et les icon-->
+        <!-- Cette section parle de ce que j'aime faire-->
         <section id="Section_4">
+        <h1> gros text avec section</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, incidunt molestias sequi perspiciatis sed magnam laudantium quis ipsum nisi, rem culpa nobis eveniet quibusdam voluptates veritatis ratione repudiandae ab commodi.</p>
+         <div class="container_images_info"> 
+              <div>
+                   <div><img src="" alt=""></div>
+                 <div><h6>truc 1</h6></div>
+                 <div><p>dsgsdfgsfgsdfgsgfbsfghsfghs</p></div>
+            </div>
+            <div>
+                    <div><img src="" alt=""></div>
+                 <div><h6>truc 2</h6></div>
+                  <div><p>ghdfghdfghfghdghdfhjdfhdfjdhj</p></div>
+             </div>
+             <div>
+                  <div><img src="" alt=""></div>
+                <div><h6>truc 2</h6></div>
+                <div><p>fghdfghdghdghdghdfghdfghdfghh</p></div>
+              </div>
+        </div>
+       
+        </section>
+
+          <div class="ligne_container"> <h1 class="ligne_decorative"></h1></div>
+       
+        <!-- Cette section parle des pages web que j'aime avec les liens et les icon-->
+        <section id="Section_5">
 
           galeie des images
         </section>
-         <section id="Section_4">
+         <section id="Section_6">
 
           statistiques
         </section>
-         <section id="Section_4">
+         <section id="Section_7">
 
           temoins
         </section>
-         <section id="Section_4">
+         <section id="Section_8">
 
           formulaire
         </section>
-          <section id="Section_4">
+          <section id="Section_ 9">
 
           logo
         </section>
-          <section id="Section_4">
+          <section id="Section_10">
 
           menu footer
         </section>

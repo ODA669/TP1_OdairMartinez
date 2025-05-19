@@ -14,8 +14,10 @@ h1,
 h2,
 h3,
 p {
-  font-family: raleway;
-  color: #3e294e;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 p {
@@ -25,7 +27,11 @@ p {
 h2 {
   font-size: 2rem;
 }
-
+.menu-nav nav ul li a {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /**********************Section Menu et logo*********************/
 
 .container {
@@ -138,6 +144,69 @@ footer p {
   font-size: 1rem;
   font-family: anybody;
 }
+
+/* ****************************section carousel***********/
+.container_carousel {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/****************************ligne_decorative*************/
+.ligne_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.ligne_decorative {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado */
+  width: 1000px;
+  margin: 20px 0;
+}
+/******************************mail form******************/
+.container_form_mail {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container_form_mail p {
+  text-align: center;
+  margin-top: 45px;
+}
+.mail_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 25px;
+}
+.mail textarea {
+  width: 300px;
+  height: 50px;
+  padding: 5px;
+}
+.bouton button {
+  width: 120px;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+}
+/*************Ssection text bouton************************/
+.container_text_bouton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 45px;
+  background-color: gainsboro;
+}
+.container_text_bouton button {
+  margin-left: 55px;
+}
+
 /*************Media Querys************************/
 
 @media (min-width: 1200px) {
@@ -145,10 +214,5 @@ footer p {
 @media (max-width: 1199px) and (min-width: 961px) {
 }
 
-@media (max-width: 960px) {
-}
-/* ****************************section carousel***********/
-
-.selector-for-some-widget {
-  box-sizing: content-box;
+@media (max-width: 960px) and (min-width: 500px) {
 }
