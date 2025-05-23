@@ -13,6 +13,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   font-family: "Alegreya", serif;
   font-optical-sizing: auto;
@@ -119,43 +120,17 @@ header .container {
   width: 100%;
   height: 100%;
 }
-/************************Section 2**********************/
-/************************Section 3**********************/
-/************************Section **********************/
-
-/************************Section footer******************************/
-
-.container-footer {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
-  border-top: 2px solid #ccc;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-footer p {
-  color: gray;
-  font-size: 1rem;
-  font-family: anybody;
-}
-
-/* ****************************section carousel***********/
+/* ****************************section 2 carousel***********/
 .container_carousel {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
-/****************************ligne_decorative*************/
+/****************************section 3 ligne_decorative*************/
 .ligne_container {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 70px;
 }
 .ligne_decorative {
   content: "";
@@ -165,48 +140,102 @@ footer p {
   width: 1000px;
   margin: 20px 0;
 }
-/******************************mail form******************/
+/******************************section 4 mail form******************/
 .container_form_mail {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
-.container_form_mail p {
+.container_form_mail h4 {
   text-align: center;
   margin-top: 45px;
+  font-size: 45px;
 }
 .mail_form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin-top: 25px;
 }
 .mail textarea {
-  width: 300px;
+  width: 400px;
   height: 50px;
   padding: 5px;
+  resize: none;
 }
-.bouton button {
-  width: 120px;
-  height: 50px;
-  padding: 5px;
-  margin-bottom: 5px;
+
+.btn-escalade {
+  background: linear-gradient(135deg, #2e8b57, #3cb371);
+  color: #fff;
   margin-left: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
 }
-/*************Ssection text bouton************************/
-.container_text_bouton {
+
+.btn-escalade:hover {
+  background: linear-gradient(135deg, #228b22, #2ecc71);
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/*************section 5 text bouton************************/
+.container_text_bouton_support {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 45px;
-  background-color: gainsboro;
+  background: linear-gradient(to bottom right, #1f1f1f, #2c2c2c, #3e1e0d);
+  height: 190px;
 }
-.container_text_bouton button {
-  margin-left: 55px;
+
+.container_text_support {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-family: "Alegreya", serif;
 }
-/*************Ssection text bouton************************/
+.container_text_support p {
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  color: white;
+}
+.container_bouton_support {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-support {
+  background: linear-gradient(135deg, #ff4500, #ff6347); /* rojo anaranjado */
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-support:hover {
+  background: linear-gradient(135deg, #d63a00, #e85c3c);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+/*************section 6 text bouton************************/
 
 .container_gallery {
   max-width: 1200px;
@@ -235,6 +264,27 @@ footer p {
 
 .gallery__img:hover {
   transform: scale(1.05);
+}
+/************************Section footer******************************/
+
+.container-footer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: gray;
+  font-size: 1rem;
+  font-family: anybody;
 }
 
 /*************Media Querys************************/
