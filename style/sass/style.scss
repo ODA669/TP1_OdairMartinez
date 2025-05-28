@@ -1,0 +1,85 @@
+
+$color_background:#f6f6f6;
+$font_Title:"Bebas Neue", sans-serif;
+$font_subtitle: "Alegreya", serif;
+
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+body {
+  background-color: $color_background;
+  margin: 0;
+}
+.menu-nav nav ul li a {
+  font-family: $font_Title;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**********************Section Menu et logo*********************/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  .container{
+      display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+.logo{
+    display: flex;
+  flex-direction: row;
+  img{
+    width: 130px;
+  height: 120px;
+  /* border-radius: 45%; */
+  }
+  h1{
+     margin: 10px 0 5px;
+  }
+}
+.menu-nav{
+ul{
+     margin-top: 45px;
+  font-family: anybody;
+  font-size: 1.75rem;
+  margin-right: 60px;
+}
+li{display: inline;
+  padding: 10px;
+}
+a{
+    text-decoration: none;
+  color: #3e294e;
+  font-family: $font_Title;
+  &.active{
+     text-decoration: underline;
+  color: #3e294e;
+  }
+}
+a:hover{
+     text-decoration: underline;
+  color: #3e294e;
+}
+nav ul{
+     display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li a{
+      text-decoration: none;
+  color: #3e294e;
+  }
+}
+
+}
+
+/**********************Section 1 carousel*********************************/

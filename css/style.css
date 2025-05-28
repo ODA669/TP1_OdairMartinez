@@ -35,7 +35,7 @@ h2 {
 }
 /**********************Section Menu et logo*********************/
 
-.container {
+.container_logo {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -50,19 +50,6 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.menu-nav nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-nav nav ul li a {
-  text-decoration: none;
-  color: #3e294e;
 }
 
 .logo {
@@ -105,6 +92,18 @@ header .container {
 
 .menu-nav a.active {
   text-decoration: underline;
+  color: #3e294e;
+}
+.menu-nav nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-nav nav ul li a {
+  text-decoration: none;
   color: #3e294e;
 }
 
