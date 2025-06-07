@@ -19,6 +19,16 @@ i.fab {
   height: 25px;
 }
 
+.display, footer, .nom_prenom, .container_img_txt_cards, .container_statistiques, .container_images_info, .container_text_bouton_support, .mail_form, .logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.display_column, .body_class, .container_nom_prenom, .container_maps, .card_, .container_cards, .donnees_statistiques, .img_and_info {
+  display: flex;
+  flex-direction: column;
+}
+
 /**********************Section Menu et logo*********************/
 header .container_logo {
   display: flex;
@@ -43,10 +53,6 @@ header .container {
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-}
 .logo img {
   width: 130px;
   height: 120px;
@@ -152,8 +158,6 @@ header .container {
 }
 
 .mail_form {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -163,16 +167,15 @@ header .container {
 .btn-escalade {
   background: linear-gradient(135deg, #2e8b57, #3cb371);
   color: #fff;
-  margin-left: 40px;
+  margin: 0 0 10px 40px;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 15px 30px;
-  border: none;
   border-radius: 50px;
+  border: none;
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
-  margin-bottom: 10px;
 }
 .btn-escalade:hover {
   background: linear-gradient(135deg, #228b22, #2ecc71);
@@ -182,8 +185,6 @@ header .container {
 
 /*************section 3 text bouton************************/
 .container_text_bouton_support {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   margin-top: 45px;
   background: linear-gradient(to bottom right, #1f1f1f, #2c2c2c, #3e1e0d);
@@ -247,8 +248,6 @@ header .container {
   font-size: 15px;
 }
 .container_images_info {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
   gap: 30px;
@@ -265,8 +264,6 @@ header .container {
 }
 
 .img_and_info {
-  display: flex;
-  flex-direction: column;
   text-align: center;
 }
 .img_and_info h6 {
@@ -356,8 +353,6 @@ header .container {
 .container_statistiques {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
   margin-top: 50px;
 }
 .container_statistiques h3 {
@@ -391,11 +386,6 @@ header .container {
   width: 50%;
 }
 
-.donnees_statistiques {
-  display: flex;
-  flex-direction: column;
-}
-
 .btn-support {
   margin-top: 25px;
 }
@@ -404,8 +394,6 @@ header .container {
 .container_cards {
   max-width: 1400px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 .container_cards h1 {
   text-align: center;
@@ -416,8 +404,6 @@ header .container {
   margin-top: 35px;
 }
 .container_img_txt_cards {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   height: auto;
@@ -425,8 +411,6 @@ header .container {
 }
 
 .card_ {
-  display: flex;
-  flex-direction: column;
   align-items: self-start;
   width: 25%;
   padding: 15px;
@@ -469,8 +453,6 @@ header .container {
 .container_maps {
   max-width: 1900px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   height: 750px;
   position: relative;
 }
@@ -484,15 +466,11 @@ header .container {
   align-items: center;
 } */
 .nom_prenom {
-  display: flex;
-  flex-direction: row;
   /* justify-content: space-between; */
   width: 100%;
 }
 
 .container_nom_prenom {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -605,8 +583,6 @@ header .container {
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   border-top: 2px solid #ccc;
   padding-top: 20px;
@@ -645,8 +621,6 @@ footer p {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1500048993951-d6f5f88b0f84") center/cover no-repeat;
   color: white;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url(/img/background/montain.jpg);
