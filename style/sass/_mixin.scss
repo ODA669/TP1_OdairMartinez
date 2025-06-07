@@ -1,11 +1,11 @@
-@mixin btn-escalade_mixin($background_:linear-gradient(135deg, #2e8b57, #3cb371),
+@mixin btn_escalade_mixin($background_:linear-gradient(135deg, #2e8b57, #3cb371),
     $margin_: 0 0 10px 40px,
     $color_: #fff,
     $padding_: 15px 30px,
     $border-radius_: 50px,
     $font-size_: 1.2rem,
     $ont-weight_: bold,
-    $cursor_
+    $cursor_:pointer
         ){background: $background_;
     margin: $margin_;
     color: $color_;
@@ -27,7 +27,7 @@
 )
 {
     background: $background_;
-    color:$color;
+    color:$color_;
     font-size: $font-size_;
     padding: $padding_;
     border: $border_;
