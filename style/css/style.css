@@ -187,6 +187,7 @@ header .container {
 }
 
 .btn-escalade {
+  text-decoration: none;
   background: linear-gradient(135deg, #2e8b57, #3cb371);
   margin: 0 0 10px 40px;
   color: #fff;
@@ -236,6 +237,7 @@ header .container {
 }
 
 .btn-support {
+  margin-top: 25px;
   background: linear-gradient(135deg, #ff4500, #ff6347);
   color: white;
   font-size: 1.1rem;
@@ -244,6 +246,7 @@ header .container {
   border-radius: 50px;
   font-weight: bold;
   cursor: url("/img/cursor/loock.png") 0 0, pointer !important;
+  text-decoration: none;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
 }
@@ -274,11 +277,11 @@ header .container {
   gap: 30px;
 }
 
-.title_subtitle_info h1 {
-  text-align: center;
-  margin: 65px;
-}
 .title_subtitle_info h2 {
+  text-align: center !important;
+  margin: 65px !important;
+}
+.title_subtitle_info h3 {
   justify-content: center;
   text-align: center;
   font-size: 22px;
@@ -407,17 +410,13 @@ header .container {
   width: 50%;
 }
 
-.btn-support {
-  margin-top: 25px;
-}
-
 /***************************section cards************************/
 .container_cards {
   max-width: 1400px;
   margin: 0 auto;
 }
-.container_cards h1 {
-  text-align: center;
+.container_cards h2 {
+  text-align: center !important;
   margin-top: 35px;
 }
 .container_cards h3 {

@@ -240,6 +240,7 @@ header {
   // font-weight: bold;
   // padding: 15px 30px;
   // border-radius: 50px;
+  text-decoration: none;
   @include btn_escalade_mixin();
   border: none;
   cursor: $cursor_pointer;
@@ -293,6 +294,7 @@ header {
 }
 
 .btn-support {
+  margin-top: 25px;
   @include btn_support_mixin();
   // background: linear-gradient(135deg, #ff4500, #ff6347);
   // /* rojo anaranjado */
@@ -303,6 +305,7 @@ header {
   // border-radius: 50px;
    cursor: $cursor_pointer;
   // font-weight: bold;
+  text-decoration: none;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
 
@@ -346,12 +349,12 @@ header {
 
 .title_subtitle {
   &_info {
-    h1 {
-      text-align: center;
-      margin: 65px;
+    h2 {
+      text-align: center !important;
+      margin: 65px !important ;
     }
 
-    h2 {
+    h3 {
       justify-content: center;
       text-align: center;
       font-size: 22px;
@@ -525,9 +528,9 @@ header {
   @extend.display_column;
 }
 
-.btn-support {
-  margin-top: 25px;
-}
+// .btn-support {
+//   margin-top: 25px;
+// }
 
 /***************************section cards************************/
 .container {
@@ -538,8 +541,8 @@ header {
     // flex-direction: column;
     @extend.display_column;
 
-    h1 {
-      text-align: center;
+    h2 {
+      text-align: center !important;
       margin-top: 35px;
     }
 
