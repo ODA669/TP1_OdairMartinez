@@ -183,7 +183,46 @@ header .container {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 95px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+@media (max-width: 1199px) and (min-width: 500px) {
+  .mail_form {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .mail_form .img_escalade_homme img {
+    width: auto;
+  }
+  .mail_form .mail textarea {
+    width: 100%;
+    margin-left: 0;
+  }
+  .mail_form .bouton .btn-escalade {
+    font-size: 9px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .mail_form {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .mail_form .img_escalade_homme img {
+    width: auto;
+  }
+  .mail_form .mail textarea {
+    width: 100%;
+    margin-left: 0;
+  }
+  .mail_form .bouton .btn-escalade {
+    font-size: 9px;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .btn-escalade {
@@ -228,6 +267,18 @@ header .container {
   text-align: center;
   color: white;
 }
+@media (min-width: 1199px) and (max-width: 501px) {
+  .container_text_support p {
+    width: 90%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .container_text_support p {
+    width: 90%;
+    font-size: 12px;
+  }
+}
 
 .container_bouton_support {
   width: 35%;
@@ -254,6 +305,20 @@ header .container {
   background: linear-gradient(135deg, #d63a00, #e85c3c);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 1199px) and (max-width: 501px) {
+  .btn-support {
+    width: auto;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .btn-support {
+    width: auto;
+    height: 40px;
+    font-size: 10px;
+  }
 }
 
 /*************************Section 4 info project*******************/
@@ -372,8 +437,46 @@ header .container {
   grid-row-start: 1;
   grid-row-end: 3;
 }
+@media (min-width: 1199px) and (max-width: 501px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .gallery .gallery__item_1,
+  .gallery .gallery__item_2,
+  .gallery .gallery__item_3,
+  .gallery .gallery__item_4,
+  .gallery .gallery__item_5,
+  .gallery .gallery__item_6 {
+    width: 100%;
+  }
+  .gallery .gallery__img {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+@media (max-width: 500px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .gallery .gallery__item_1,
+  .gallery .gallery__item_2,
+  .gallery .gallery__item_3,
+  .gallery .gallery__item_4,
+  .gallery .gallery__item_5,
+  .gallery .gallery__item_6 {
+    width: 100%;
+  }
+  .gallery .gallery__img {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
 
-/*************************section statistiques***************/
+/*************************section 6 statistiques***************/
 .container_statistiques {
   max-width: 1200px;
   margin: 0 auto;
@@ -384,6 +487,42 @@ header .container {
 }
 .container_statistiques p {
   margin-top: 35px;
+}
+@media (min-width: 1199px) and (max-width: 501px) {
+  .container_statistiques .container_text_statistiques {
+    width: 50%;
+    /* align-items: center; */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .container_statistiques .gateau_statistiques {
+    display: none;
+  }
+  .container_statistiques h3 {
+    font-size: 40px;
+  }
+  .container_statistiques p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .container_statistiques .container_text_statistiques {
+    width: 50%;
+    /* align-items: center; */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .container_statistiques .gateau_statistiques {
+    display: none;
+  }
+  .container_statistiques h3 {
+    font-size: 40px;
+  }
+  .container_statistiques p {
+    font-size: 18px;
+  }
 }
 
 .donnees_statistiques h2 {
@@ -410,7 +549,7 @@ header .container {
   width: 50%;
 }
 
-/***************************section cards************************/
+/***************************section 7 cards************************/
 .container_cards {
   max-width: 1400px;
   margin: 0 auto;
@@ -423,11 +562,38 @@ header .container {
   text-align: center;
   margin-top: 35px;
 }
+@media (max-width: 500px) {
+  .container_cards h3 {
+    font-size: 15px;
+  }
+}
 .container_img_txt_cards {
   justify-content: space-between;
   width: 100%;
   height: auto;
   padding: 50px;
+}
+@media (max-width: 1199px) and (min-width: 501px) {
+  .container_img_txt_cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container_img_txt_cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1199px) and (min-width: 501px) {
+  .container_title_cards {
+    padding: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .container_title_cards {
+    padding: 35px;
+  }
 }
 
 .card_ {
@@ -443,12 +609,28 @@ header .container {
   height: 178px;
   border-radius: 30px;
 }
+@media (max-width: 1199px) and (min-width: 501px) {
+  .card_ {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .card_ {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
 
 .reseaux_sociaux_team a {
   color: #ffffff;
 }
 
-/**************************section maps formulaire*****************/
+/**************************section 8  maps formulaire*****************/
 .container_form_maps button {
   background: linear-gradient(135deg, #ff5100, rgba(255, 166, 0, 0.5));
   color: white;
@@ -469,12 +651,38 @@ header .container {
 .container_form_maps button:active {
   transform: scale(0.97);
 }
+@media (max-width: 1199px) and (min-width: 501px) {
+  .container_form_maps {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container_form_maps {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .container_maps {
   max-width: 1900px;
   margin: 0 auto;
   height: 750px;
   position: relative;
+}
+@media (max-width: 1199px) and (min-width: 501px) {
+  .container_maps {
+    width: 500px;
+    height: 900px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .container_maps {
+    width: 500px;
+    height: 900px;
+    margin-left: 0;
+  }
 }
 
 /* form {
@@ -492,6 +700,42 @@ header .container {
 
 .container_nom_prenom {
   justify-content: space-between;
+}
+@media (max-width: 1199px) and (min-width: 501px) {
+  .container_nom_prenom .nom_prenom {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_nom_prenom #nom {
+    width: 200px;
+  }
+  .container_nom_prenom #prenom {
+    width: 200px;
+  }
+  .container_nom_prenom #email {
+    width: 200px;
+  }
+  .container_nom_prenom #message {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .container_nom_prenom .nom_prenom {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_nom_prenom #nom {
+    width: 200px;
+  }
+  .container_nom_prenom #prenom {
+    width: 200px;
+  }
+  .container_nom_prenom #email {
+    width: 200px;
+  }
+  .container_nom_prenom #message {
+    width: 200px;
+  }
 }
 
 #nom {
@@ -532,6 +776,20 @@ header .container {
   z-index: 2;
   /* encima del mapa */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1199px) and (min-width: 501px) {
+  .form-overlay {
+    width: 52%;
+    top: 5450px;
+    height: 750px;
+  }
+}
+@media (max-width: 500px) {
+  .form-overlay {
+    width: 52%;
+    top: 8100px;
+    height: 750px;
+  }
 }
 
 .input-control {
@@ -595,6 +853,22 @@ header .container {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 1199px) and (max-width: 501px) {
+  .menu_footer .menu-nav {
+    width: 90%;
+  }
+  .menu_footer .menu-nav nav ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .menu_footer .menu-nav {
+    width: 90%;
+  }
+  .menu_footer .menu-nav nav ul li a {
+    font-size: 12px;
+  }
+}
 
 /************************Section footer******************************/
 .container_footer {
@@ -631,6 +905,32 @@ footer p {
   color: gray;
   font-size: 1rem;
   font-family: anybody;
+}
+@media (min-width: 1199px) and (max-width: 501px) {
+  footer {
+    width: 100%;
+  }
+  footer .nom_realisateur {
+    margin-left: 23px;
+  }
+  footer .contact_realizateur {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+  footer .nom_realisateur {
+    margin-left: 23px;
+  }
+  footer .contact_realizateur {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
 }
 
 /************************confirmation page********/

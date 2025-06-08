@@ -528,58 +528,60 @@
           </div>
           <!-- <form id="formulaire" action="/confirmation.html" method="" class="form-overlay">
            -->
-          <form
-            id="formulaire"
-            action="/confirmation.html"
-            method="post"
-            class="form-overlay"
-          >
-            <h3>Envoie-nous ton commentaire</h3>
-            <p>
-              "Envoyer un commentaire à 14 Peaks nous permet d’améliorer
-              continuellement nos expéditions et de vous offrir une expérience
-              inoubliable, adaptée à vos attentes."
-            </p>
-            <div class="container_nom_prenom">
-              <div class="nom_prenom">
-                <div class="input-control">
-                  <input id="nom" name="nom" type="text" placeholder="Nom" />
-                  <div class="errorMessage"></div>
+          <div>
+            <form
+              id="formulaire"
+              action="/confirmation.html"
+              method="post"
+              class="form-overlay"
+            >
+              <h3>Envoie-nous ton commentaire</h3>
+              <p>
+                "Envoyer un commentaire à 14 Peaks nous permet d’améliorer
+                continuellement nos expéditions et de vous offrir une expérience
+                inoubliable, adaptée à vos attentes."
+              </p>
+              <div class="container_nom_prenom">
+                <div class="nom_prenom">
+                  <div class="input-control">
+                    <input id="nom" name="nom" type="text" placeholder="Nom" />
+                    <div class="errorMessage"></div>
+                  </div>
+                  <div class="input-control">
+                    <input
+                      id="prenom"
+                      name="prenom"
+                      type="text"
+                      placeholder="Prenom"
+                    />
+                    <div class="errorMessage"></div>
+                  </div>
                 </div>
                 <div class="input-control">
                   <input
-                    id="prenom"
-                    name="prenom"
-                    type="text"
-                    placeholder="Prenom"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
                   />
+                  <div class="errorMessage"></div>
+                  <div class="input-control"></div>
+                </div>
+                <div class="input-control">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="message"
+                  ></textarea>
                   <div class="errorMessage"></div>
                 </div>
               </div>
-              <div class="input-control">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                />
-                <div class="errorMessage"></div>
-                <div class="input-control"></div>
-              </div>
-              <div class="input-control">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="message"
-                ></textarea>
-                <div class="errorMessage"></div>
-              </div>
-            </div>
-            <button id="btn_form_maps" type="submit" onclick="validateForm()">
-              Envoyer
-            </button>
-          </form>
+              <button id="btn_form_maps" type="submit" onclick="validateForm()">
+                Envoyer
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 

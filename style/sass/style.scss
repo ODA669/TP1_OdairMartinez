@@ -227,7 +227,49 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 95px;
+  justify-content: space-between;
+  margin-top: 60px;
+  
+  @media (max-width: 1199px) and (min-width: 500px) {
+      flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    .img_escalade_homme img {
+      width: auto;
+    }
+
+    .mail textarea {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .bouton .btn-escalade {
+     font-size: 9px;
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    .img_escalade_homme img {
+      width: auto;
+    }
+
+    .mail textarea {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .bouton .btn-escalade {
+     font-size: 9px;
+      text-align: center;
+      margin-left: 0;
+    }
+  }
 }
 
 .btn-escalade {
@@ -253,6 +295,9 @@ header {
     transform: scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   }
+  // @media (max-width: 500px) {
+  //   font-size: 14px;
+  // }
 }
 
 /*************section 3 text bouton************************/
@@ -282,6 +327,14 @@ header {
       font-family: $font_subtitle;
       text-align: center;
       color: white;
+       @media (min-width: 1199px) and (max-width: 501px) {
+         width: 90%;
+        font-size: 12px;
+       }
+        @media (max-width: 500px) {
+      width: 90%;
+        font-size: 12px;
+    }
     }
   }
 }
@@ -291,7 +344,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+   
 }
+
+
 
 .btn-support {
   margin-top: 25px;
@@ -314,6 +370,16 @@ header {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
   }
+   @media (min-width: 1199px) and (max-width: 501px) {
+     width: auto;
+      height: 40px;
+      font-size: 10px;
+   }
+   @media (max-width: 500px) {
+      width: auto;
+      height: 40px;
+      font-size: 10px;
+    }
 }
 
 /*************************Section 4 info project*******************/
@@ -392,6 +458,7 @@ header {
     text-align: center;
     grid-gap: 30px;
   }
+
 }
 
 .item {
@@ -419,6 +486,7 @@ header {
     &:hover {
       transform: scale(1.05);
     }
+    
   }
 
   &__item_1 {
@@ -462,9 +530,47 @@ header {
     grid-row-start: 1;
     grid-row-end: 3;
   }
+   @media (min-width: 1199px) and (max-width: 501px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .gallery__item_1,
+      .gallery__item_2,
+      .gallery__item_3,
+      .gallery__item_4,
+      .gallery__item_5,
+      .gallery__item_6 {
+        width: 100%;
+      }
+
+      .gallery__img {
+        width: 100%;
+        border-radius: 4px;
+      }
+   }
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .gallery__item_1,
+      .gallery__item_2,
+      .gallery__item_3,
+      .gallery__item_4,
+      .gallery__item_5,
+      .gallery__item_6 {
+        width: 100%;
+      }
+
+      .gallery__img {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
 }
 
-/*************************section statistiques***************/
+/*************************section 6 statistiques***************/
 .container_statistiques {
   max-width: 1200px;
   margin: 0 auto;
@@ -480,6 +586,47 @@ header {
   p {
     margin-top: 35px;
   }
+
+   @media (min-width: 1199px) and (max-width: 501px) {
+        .container_text_statistiques{
+          width: 50%;
+    /* align-items: center; */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    }
+    .gateau_statistiques{
+      display: none;
+    }
+    h3{
+ font-size: 40px;
+    }
+       
+        p{
+              font-size: 18px;
+        }  
+   }
+
+   @media (max-width: 500px) {
+    .container_text_statistiques{
+          width: 50%;
+    /* align-items: center; */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    }
+    .gateau_statistiques{
+      display: none;
+    }
+    h3{
+ font-size: 40px;
+    }
+       
+        p{
+              font-size: 18px;
+        }
+   }
+
 }
 
 .donnees_statistiques h2 {
@@ -532,7 +679,7 @@ header {
 //   margin-top: 25px;
 // }
 
-/***************************section cards************************/
+/***************************section 7 cards************************/
 .container {
   &_cards {
     max-width: 1400px;
@@ -550,6 +697,10 @@ header {
       text-align: center;
       margin-top: 35px;
     }
+    
+     @media (max-width: 500px) {h3{
+      font-size: 15px;
+     }}
   }
 
   &_img_txt_cards {
@@ -560,6 +711,25 @@ header {
     width: 100%;
     height: auto;
     padding: 50px;
+
+     @media (max-width: 1199px) and (min-width: 501px) { 
+       display: flex;
+       flex-direction: column;
+       }
+
+      @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    }
+  }
+  &_title_cards{
+    @media (max-width: 1199px) and (min-width: 501px) { 
+    padding:35px;
+       }
+
+      @media (max-width: 500px) {
+       padding:35px;
+    }
   }
 }
 
@@ -579,7 +749,18 @@ header {
     height: 178px;
     border-radius: 30px;
   }
-    
+ @media (max-width: 1199px) and (min-width: 501px) {
+     display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 25px;
+ }
+     @media (max-width: 500px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 25px;
+     }
 }
  .reseaux_sociaux_team{
       a{
@@ -587,7 +768,7 @@ header {
       }
   }
 
-/**************************section maps formulaire*****************/
+/**************************section 8  maps formulaire*****************/
 .container_form_maps {
 button {
   background: linear-gradient(135deg, #ff5100, rgba(255, 166, 0, 0.5));
@@ -611,6 +792,15 @@ button:hover {
 button:active {
   transform: scale(0.97);
 }
+@media (max-width: 1199px) and (min-width: 501px) {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  display: flex;
+  flex-direction: column;
+}
+     
 }
 
 .container_maps {
@@ -621,6 +811,17 @@ button:active {
   @extend.display_column;
   height: 750px;
   position: relative;
+  @media (max-width: 1199px) and (min-width: 501px) {
+     width: 500px;
+  height: 900px;
+  margin-left: 0;
+}
+  
+  @media (max-width: 500px) {
+  width: 500px;
+  height: 900px;
+  margin-left: 0;
+}
 }
 
 /* form {
@@ -644,6 +845,37 @@ button:active {
   // flex-direction: column;
   @extend.display_column;
   justify-content: space-between;
+   @media (max-width: 1199px) and (min-width: 501px) {
+        .nom_prenom{
+         // width: 50%;
+      display: flex;
+      flex-direction: column;
+      }
+      #nom{width: 200px;}
+      #prenom{width: 200px;}
+      #email{
+        width: 200px;
+      }
+      #message{
+        width: 200px;
+      }
+   }
+     @media (max-width: 500px) {
+      .nom_prenom{
+         // width: 50%;
+      display: flex;
+      flex-direction: column;
+      }
+      #nom{width: 200px;}
+      #prenom{width: 200px;}
+      #email{
+        width: 200px;
+      }
+      #message{
+        width: 200px;
+      }
+     
+    }
 }
 
 #nom {
@@ -670,6 +902,10 @@ button:active {
   height: 100%;
   border: 0;
   z-index: 1;
+  
+// @media (max-width: 500px) {
+//   display: none;
+// }
 }
 
 .form-overlay {
@@ -684,6 +920,16 @@ button:active {
   z-index: 2;
   /* encima del mapa */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   @media (max-width: 1199px) and (min-width: 501px) {
+        width: 52%;
+      top: 5450px;
+      height: 750px;
+   }
+    @media (max-width: 500px) {
+      width: 52%;
+      top: 8100px;
+      height: 750px;
+    }
 }
 
 .input-control {
@@ -731,6 +977,8 @@ button:active {
       border-color: red;
     }
   }
+
+ 
 }
 
 #btn_form_maps {
@@ -760,6 +1008,22 @@ button:active {
 .menu_footer {
   display: flex;
   justify-content: center;
+  @media (min-width: 1199px) and (max-width: 501px) {
+     .menu-nav{
+    width: 90%;
+    nav ul li a{
+      font-size: 12px;
+    }
+  }
+  }
+@media (max-width: 500px) {
+  .menu-nav{
+    width: 90%;
+    nav ul li a{
+      font-size: 12px;
+    }
+  }
+}
 }
 
 /************************Section footer******************************/
@@ -767,6 +1031,7 @@ button:active {
 .container_footer {
   max-width: 1200px;
   margin: 0 auto;
+
 
 }
 
@@ -782,6 +1047,7 @@ footer {
   .nom_realisateur {
     font-size: 16px;
         margin-left: 90px;
+        
   }
 
   .icons_reseaux_sociaux {
@@ -791,6 +1057,7 @@ footer {
     a {
       color: red;
     }
+ 
   }
 
   .contact_realizateur {
@@ -807,6 +1074,28 @@ footer {
     color: gray;
     font-size: 1rem;
     font-family: anybody;
+  }
+  @media (min-width: 1199px) and (max-width: 501px) {
+       width: 100%;
+    .nom_realisateur{
+      margin-left: 23px;
+    }
+    .contact_realizateur{
+      display: flex;
+      flex-direction: column;
+              width: 50%;
+    }
+  }
+       @media (max-width: 500px) {
+    width: 100%;
+    .nom_realisateur{
+      margin-left: 23px;
+    }
+    .contact_realizateur{
+      display: flex;
+      flex-direction: column;
+              width: 50%;
+    }
   }
 }
 
@@ -864,8 +1153,7 @@ footer {
 
 /*************Media Querys************************/
 
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {}
 
-@media (max-width: 1199px) and (min-width: 961px) {}
+@media (min-width: 1199px) and (max-width: 501px) {}
 
-@media (max-width: 960px) and (min-width: 500px) {}
