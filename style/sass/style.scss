@@ -5,6 +5,7 @@ $font_Title: "Bebas Neue", sans-serif;
 $font_subtitle: "Alegreya", serif;
 $colo_background_form: #eaeaea;
 $hyperlink: none;
+$cursor_pointer:url('/img/cursor/loock.png') 0 0, pointer !important;
 
 * {
   box-sizing: border-box;
@@ -14,13 +15,11 @@ $hyperlink: none;
 body {
   background-color: $color_background;
   margin: 0;
+  cursor: url('/img/cursor/axe.png')0 0, auto;
+   height: 100vh; 
 }
 
-.menu-nav nav ul li a {
-  font-family: $font_Title;
-  font-weight: 400;
-  font-style: normal;
-}
+
 i.fab{
     width: 25px;
     height: 25px;
@@ -36,23 +35,33 @@ i.fab{
 }
 
 /**********************Section Menu et logo*********************/
-header .container_logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .container_logo {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+
+}
+.logo a {
+   cursor:$cursor_pointer;
 }
 
 header {
-  background: #dfe6e9;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
 
+  // background: #dfe6e9;
+  // position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #ff8000, #e63946);
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  // position: relative;
+.container_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
   .container {
     display: flex;
     justify-content: space-between;
@@ -77,6 +86,7 @@ header {
 }
 
 .menu-nav {
+
   ul {
     margin-top: 45px;
     font-family: anybody;
@@ -101,7 +111,7 @@ header {
   }
 
   a:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
     color: #3e294e;
   }
 
@@ -115,9 +125,19 @@ header {
     li a {
       text-decoration: none;
       color: #3e294e;
+        font-family: $font_Title;
+  font-weight: 400;
+  font-style: normal;
+  cursor:$cursor_pointer;
     }
   }
 }
+// .menu-nav nav ul li a {
+//   // font-family: $font_Title;
+//   // font-weight: 400;
+//   // font-style: normal;
+//   // cursor:$cursor_pointer;
+// }
 
 /**********************Section 1 carousel*********************************/
 #Section_1 {
@@ -137,6 +157,16 @@ header {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  cursor: $cursor_pointer;
+}
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(7484%) hue-rotate(1deg) brightness(96%) contrast(103%);
+}
+.carousel-control-prev-icon {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(7484%) hue-rotate(1deg) brightness(96%) contrast(103%);
 }
 
 /****************************section  ligne_decorative*************/
@@ -173,11 +203,17 @@ header {
   }
 }
 
+.img_escalade_homme img{
+      width: 80px;
+    height: 100px;
+}
+
 .mail textarea {
   width: 400px;
   height: 50px;
   padding: 5px;
   resize: none;
+  margin-left: 40px;
   &:hover {
       border-color: #007bff;
       box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -206,7 +242,7 @@ header {
   // border-radius: 50px;
   @include btn_escalade_mixin();
   border: none;
-  cursor: pointer;
+  cursor: $cursor_pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
 
@@ -265,7 +301,7 @@ header {
   // padding: 12px 28px;
   // border: none;
   // border-radius: 50px;
-  // cursor: pointer;
+   cursor: $cursor_pointer;
   // font-weight: bold;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
@@ -558,7 +594,7 @@ button {
   font-size: 16px;
   font-weight: bold;
   border-radius: 30px;
-  cursor: pointer;
+  cursor: $cursor_pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(255, 200, 0, 0.4);
 }
